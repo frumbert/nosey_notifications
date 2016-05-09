@@ -1,4 +1,4 @@
-# nosey_notifications
+# nosey notifications
 
 This Moodle plugin lets you snoop on certain events and post the record and event data to an external url, using BODY formatted JSON sent via a custom POST. (Internally it uses cURL).
 
@@ -14,7 +14,15 @@ It currently captures the following events:
 
 But coders should be able to extend the same system for any of the events listed [here](https://docs.moodle.org/dev/Event_2) - or any of your own custom events, of course.
 
+## installation
+
+This belongs in your moodle's `~/local/nosey/` (where `~` is the moodle root - the same folder that has `config.php` in it).
+
+## configuration
+
 You can configure the plugin by going (as admin) to Site Administration > Plugins > Local Plugins > Nosey Notifications. The screen shows you things like the URL - each different event can have its own URL. If your plugin also has certificates (pem format) in ~/local/nosey/certificate/ folder then they can be selected for SSL. And there’s a global “on/off” toggle for all events.
+
+## example data
 
 Here’s a dump of a typical request body (I've captured this using [RequestBin](http://requestb.in) and formatted the json using [js beautifier](http://jsbeautifier.org)).
 
@@ -142,6 +150,6 @@ here’s the same record when it is deleted. you can see record is false since t
         "record": false
     }
 
-License:
+## License:
 
 http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
