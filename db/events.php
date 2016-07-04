@@ -1,11 +1,11 @@
 <?php
 /**
- * Aurora local plugin event handlers
+ *  local plugin event handlers
  *
  * @package    local
  * @subpackage nosey
  * @author     avide elearning
- * @copyright  2015 Avant
+ * @copyright  2016 Avide eLearning (avide.com.au)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

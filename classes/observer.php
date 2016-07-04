@@ -15,10 +15,10 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Local stuff for category enrolment plugin.
+ * External url notifier for course related events.
  *
  * @package    local_nosey
- * @copyright  avide elearning 2015
+ * @copyright  2016 Avide eLearning (avide.com.au)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -32,6 +32,14 @@ class local_nosey_observer {
 
         $data = array();
         $data["event"] = $eventdata;
+
+        if (isset($eventrecord->userid)) {
+          $portalid = $DB->get_field('user', 'idnumber', array('id' => $eventrecord->userid));
+          if (intval($portalid) > 0) {
+            $eventrecord->portalid = $portalid;
+          }
+        }
+
         $data["record"] = $eventrecord;
 
         $data_string = json_encode($data, JSON_NUMERIC_CHECK);

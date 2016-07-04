@@ -18,7 +18,7 @@
  * Upgrade code for install
  *
  * @package   local_nosey
- * @copyright 2015 Avide eLearning
+ * @copyright  2016 Avide eLearning (avide.com.au)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
