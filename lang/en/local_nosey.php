@@ -4,7 +4,7 @@
  *
  * @package    local
  * @subpackage nosey
- * @copyright  2013 Avide
+ * @copyright  2016 Avide eLearning (avide.com.au)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -28,7 +28,10 @@ $string['sendnotifications'] = 'Send Notifications';
 $string['sendnotificationsdescription'] = 'Enable the notifications to be sent';
 
 $string['urlcompleted'] = 'Course completion URL';
-$string['urlcompleteddescription'] = 'Course completion information will POSTed to this url using application/json encoding, attached to the request BODY';
+$string['urlcompleteddescription'] = 'Apon course completion, information will POSTed to this url using application/json encoding, attached to the request BODY';
+
+$string['urlcompletionupdated'] = 'Course completion updated URL';
+$string['urlcompletionupdateddescription'] = 'When the course completion record changes, information will POSTed to this url using application/json encoding, attached to the request BODY';
 
 $string['urlmodcompleted'] = 'Activity completion URL';
 $string['urlmodcompleteddescription'] = 'Activity completion information will POSTed to this url using application/json encoding, attached to the request BODY';
@@ -40,7 +43,7 @@ $string['urlunenrolled'] = 'Un-Enrolment URL';
 $string['urlunenrolleddescription'] = 'User un-enrolment information will POSTed to this url using application/json encoding, attached to the request BODY';
 
 $string['coursecrud'] = 'Course CRUD';
-$string['urlcompleteddescription'] = 'Course created, updated or deleted record information will POSTed to this url using application/json encoding, attached to the request BODY';
+$string['coursecruddescription'] = 'Course created, updated or deleted record information will POSTed to this url using application/json encoding, attached to the request BODY';
 
 $string['categorycrud'] = 'Category CRUD';
-$string['urlcompleteddescription'] = 'Category created, updated or deleted record information will POSTed to this url using application/json encoding, attached to the request BODY';
+$string['categorycruddescription'] = 'Category created, updated or deleted record information will POSTed to this url using application/json encoding, attached to the request BODY';
